@@ -1,0 +1,13 @@
+.header__menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    background-image: url(./img/tu-tram-pham-202263\ 1.png);
+    background: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+}
+
+.social__circle{
+    border: white solid 2px;
+    border-radius: 50%;
+}
