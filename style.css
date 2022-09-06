@@ -111,8 +111,12 @@
   margin: 20px auto;
 }
 .section {
-  padding: 120px;
   margin: 30px auto;
+}
+
+.section__content{
+    width: 80%;
+    margin: auto;
 }
 .projects__section {
 }
@@ -271,51 +275,166 @@
   color: #2c4058;
 }
 .author {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 20px1;
-    margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px1;
+  margin-top: 40px;
 }
 .author__photo {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   overflow: hidden;
+  margin: 20px;
 }
 .author__data {
 }
 .author_name {
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 22px;
-color: #2C4058;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2c4058;
 }
 .author_date {
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 17px;
-color: #55B7FF;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #55b7ff;
 }
 .gallery__section {
 }
+
+#gallery-photo1 {
+  grid-area: large;
+}
+#gallery-photo2 {
+  grid-area: small1;
+}
+#gallery-photo3 {
+  grid-area: small2;
+}
+#gallery-photo4 {
+  grid-area: small3;
+}
+#gallery-photo5 {
+  grid-area: small4;
+}
+
 .gallery__photos-grid {
+  width: 80%;
+  margin: 60px auto;
+  display: grid;
+  grid-template-areas:
+    "large large small1 small2"
+    "large large small3 small4";
+  gap: 10px;
 }
 .gallery__photo {
+  position: relative;
 }
+
+.photo__cover {
+  width: 100%;
+  height: 100%;
+  background-color: #0000004f;
+  position: absolute;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 300ms;
+}
+
+.photo__cover:hover {
+  opacity: 1;
+}
+
+.photo__zoom {
+}
+
 .large {
 }
 .small {
 }
-.gallery__more {
+
+.gallery__modal {
+}
+
+.modal__background {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+.modal_content {
+  margin: auto;
+  display: block;
+  height: 80vh;
+  width: auto;
+}
+
+.modal_closebtn {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* @media only screen and (max-width: 700px){
+    .modal_content {
+      width: 100%;
+    }
+  } */
+.modal_closebtn:hover,
+.modal_closebtn:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal_content {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.btn-center {
+  display: block;
+  margin: auto;
 }
 .contacts__section {
 }
 .contacts__map {
+  position: relative;
+  opacity: 0.9;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(95%);
+  height: 32vh;
 }
 .contacts__description {
 }
