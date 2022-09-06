@@ -114,9 +114,9 @@
   margin: 30px auto;
 }
 
-.section__content{
-    width: 80%;
-    margin: auto;
+.section__content {
+  width: 80%;
+  margin: auto;
 }
 .projects__section {
 }
@@ -436,12 +436,36 @@
   filter: grayscale(95%);
   height: 32vh;
 }
+
+.contacts__data {
+  width: 50%;
+  margin: auto;
+  padding: 60px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 50px;
+  color: #000000;
+}
 .contacts__description {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .contacts__description-text {
 }
 .contacts__description-form {
+
 }
+
+input{
+    display: block;
+    border-bottom: 2px solid #888f97;
+    width: 310px;
+    height: 41px;
+}
+
 .footer {
   background: linear-gradient(243.43deg, #7e5aff 16.9%, #55b7ff 83.27%);
   display: flex;
