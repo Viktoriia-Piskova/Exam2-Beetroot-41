@@ -146,6 +146,10 @@ html {
     justify-content: center;
 }
 
+.burger_menu-mobile{
+    display: none;
+}
+
 .burger-central{
     display: block;
     width: 40px;
@@ -204,8 +208,6 @@ html {
     transform: none;
 }
 
-.burger_mobile {
-}
 .header__navigation-mobile {
 }
 .navigation__items-mobile {
@@ -236,12 +238,11 @@ html {
     letter-spacing: 0.1em;
   }
 
-  /* .header__menu {
+  .header__menu {
     display: none;
-  } */
+  }
 
-  /* .header__background{
-    padding: 0px;*/
+
 }
 
 .header__menu-mobile {
@@ -253,6 +254,16 @@ html {
    .header__menu {
     display: none;
   }
+
+  .burger_menu-mobile{
+    display: block;
+}
+}
+
+.logo-image{
+    display: block;
+    width: 60%;
+    margin-left: -20px;
 }
 
 .slider__description {
@@ -699,6 +710,7 @@ input:focus {
 .footer {
   background: linear-gradient(243.43deg, #7e5aff 16.9%, #55b7ff 83.27%);
   color: white;
+  padding-bottom: 20px;
 }
 .footer__general {
   display: flex;
