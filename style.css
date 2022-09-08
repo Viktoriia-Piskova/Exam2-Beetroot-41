@@ -221,8 +221,7 @@ html {
 }
 
 .navigation__items-mobile a {
-  background-color: white;
-  color: black;
+  color: #ffffff;
   height: 70px;
   display: block;
   margin: 30px;
