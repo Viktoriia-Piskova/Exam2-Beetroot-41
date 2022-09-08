@@ -11,7 +11,7 @@ html {
 .header__background {
   height: 100%;
   width: 100%;
-  background-image: url(./img/tu-tram-pham-202263\ 1.png);
+  background-image: url('../img/header-bkfr.png');
   padding: 50px;
 }
 .header__menu {
@@ -658,6 +658,7 @@ html {
   bottom: 0px;
   left: 0px;
   right: 0px;
+  z-index: -1;
 }
 .contacts__description-text {
 }
